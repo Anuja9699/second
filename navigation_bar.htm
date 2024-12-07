@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .login-toggle-btn {
+        border-radius: 10px;
+        color: white;
+        background-color: rosybrown;
+        border: none;
+        letter-spacing: 3px;
+        padding: 10px 20px;
+      }
+      .main_div {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(188, 184, 184);
+        padding: 10px 10px;
+        align-items: center;
+        box-shadow: 3px 3px 2px 2px lightgrey;
+      }
+      .list_contanier {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        font-family: cursive;
+      }
+      .body {
+        margin: 0;
+        padding: 0;
+      }
+      .img {
+        border-radius: 50%;
+      }
+      .list_container_style {
+        width: 500px;
+      }
+      .btn_style {
+        justify-content: space-between;
+        display: flex;
+        width: 200px;
+      }
+      @media screen and (max-width: 480px) {
+        .list_contanier {
+          display: none;
+        }
+        .list_container_style {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 451px) {
+        .login-toggle-btn {
+          padding: 5px 5px;
+        }
+      }
+      @media screen and (max-width: 351px) {
+        .main_div {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="main_div">
+      <div>
+        <img src="./logo.png" />
+      </div>
+      <div class="list_container_style">
+        <ul class="list_contanier">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="btn_style">
+        <button class="login-toggle-btn">Login</button>
+        <button class="login-toggle-btn">Logout</button>
+      </div>
+    </div>
+  </body>
+</html>
